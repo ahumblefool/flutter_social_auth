@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class AuthProviderButton extends StatelessWidget {
 
 final GestureTapCallback? onPressed;
-  // final String? providerName;
   final String? buttonText;
   final Color? buttonColor;
   final Color? buttonTextColor;
@@ -11,7 +10,6 @@ final GestureTapCallback? onPressed;
 
   AuthProviderButton(
       {@required this.onPressed,
-      // this.providerName,
       this.buttonColor,
       this.buttonText,
       this.buttonTextColor,
@@ -38,8 +36,6 @@ final GestureTapCallback? onPressed;
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              // Image.asset(providerName!,
-                  // width: 25.0),
               Expanded(
                   child: Text(buttonText!,
                       style: TextStyle(
